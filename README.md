@@ -1,27 +1,35 @@
-# FirebaseTodo
+# Angular TODO App with Authentication
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+## Project Description and Motivation
 
-## Development server
+This is a simple TODO app built on Angular using Material UI. The primary motivation behind this app is to gain hands-on experience with authentication in Angular. Additionally, it serves as a practical application for practicing the incorporation of various UI components provided by Material UI.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Practical Application
 
-## Code scaffolding
+I use this app on a daily basis to keep track of tasks for the day. The authentication feature ensures the security and isolation of todos for each user.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Demo
 
-## Build
+Check out the live demo of the app [here](https://todo-angular-bootstrap.web.app/todo).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Contribution and Collaboration
 
-## Running unit tests
+Contributions to enhance the app or address any issues are welcome. You can use the provided source code to create your own TODO app. If you have any ideas or improvements, feel free to collaborate.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Getting Started
 
-## Running end-to-end tests
+To run the app locally or contribute, follow these steps:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone the repository.
+2. Install the required dependencies using `npm install`.
+3. Set up authentication details (if applicable).
+4. Build and run the app using `ng serve`.
 
-## Further help
+## Technologies Used
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Angular:** The app is developed using the Angular framework.
+- **Firebase:** The app incorporates authentication features.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use the code as a reference for your own projects.
