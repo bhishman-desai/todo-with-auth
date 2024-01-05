@@ -1,0 +1,18 @@
+footer{
+  position:fixed;
+  bottom:0px;
+  width:100%;
+  z-index: 1;
+}
+.clear { clear: both; height: 60px; }
+
+.heart{
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  height: 22px;
+  width: 20px;
+  top: 5px;
+}

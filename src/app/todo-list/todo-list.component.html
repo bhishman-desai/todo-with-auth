@@ -1,0 +1,42 @@
+<mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+
+<div class="container-input">
+  <mat-form-field class="example-full-width">
+    <mat-label style="color: white;">Add a task</mat-label>
+    <input #inputElement matInput placeholder="Buy Groceries" (keyup.enter)="addTodo(inputElement)">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="addTodo(inputElement)"
+          [disabled]="buttonDisabled && inputElement.value === ''">ADD
+  </button>
+</div>
+
+<mat-card *ngIf="todos.length === 0 && !isLoading">
+  <mat-card-header style="justify-content:center">
+    <mat-icon>filter_list</mat-icon><h3>No Todos</h3>
+  </mat-card-header>
+</mat-card>
+
+<div *ngIf="todos && !isLoading">
+  <div class="container" *ngFor="let todo of todos; let i = index">
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <mat-checkbox [checked]="todo.status" (change)="statusUpdate(todo.refId,$event)"></mat-checkbox>
+          <textarea #editTodo [(ngModel)]="todo.description" cdkTextareaAutosize class="txtarea"
+                    (blur)="updateTodo(todo.refId, todo.description)"></textarea>
+          <mat-error *ngIf="editTodo.textLength<1">This field cannot be empty</mat-error>
+        </mat-card-title>
+      </mat-card-header>
+
+      <mat-card-actions style="justify-content: right">
+        <button mat-raised-button color="accent" (click)="deleteTodo(todo.refId)" style="">DELETE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+
+
+
+
